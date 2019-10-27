@@ -16,6 +16,8 @@ function wasOnTop = WinOnTop( figureHandle, isOnTop )
 % * WasOnTop = WinOnTop(...);       - returns boolean value "if figure WAS on top"
 % * isOnTop = WinOnTop(hfigure,[])  - get "if figure is on top" property
 %
+% For Matlab windows, created via `hf=uifigure()` use `uifigureOnTop()`, see: 
+% https://www.mathworks.com/matlabcentral/fileexchange/73134-uifigureontop
 %
 %% LIMITATIONS:
 %
@@ -33,6 +35,7 @@ function wasOnTop = WinOnTop( figureHandle, isOnTop )
 % 2015.04.17 - adapted for changes in matlab graphics system (since R2014b)
 % 2016.05.21 - another ishg2() checking mechanism 
 % 2016.09.24 - fixed IsOnTop vs isOnTop bug
+% 2019.10.27 - link for uifigureOnTop; connected to github; renamed to "demo_"
 
 %% Parse Inputs
 
